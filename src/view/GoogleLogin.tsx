@@ -31,7 +31,7 @@ function GoogleLoginView() {
         {!loggedIn &&
             <GoogleLogin
             clientId="939504627586-ttuki5v3ksospgdgm3uep8oi4i5ld5un.apps.googleusercontent.com"
-            buttonText="Login with Google"
+            buttonText="Login"
             onSuccess={googleLogin}
             onFailure={googleLogin}
             cookiePolicy="single_host_origin"
@@ -42,7 +42,7 @@ function GoogleLoginView() {
         {loggedIn &&
             <GoogleLogout
                 clientId="939504627586-ttuki5v3ksospgdgm3uep8oi4i5ld5un.apps.googleusercontent.com"
-                buttonText="LogOut with google"
+                buttonText="Logout"
                 onLogoutSuccess={googleLogout}
                 onFailure={googleLogout}
             />
